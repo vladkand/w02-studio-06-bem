@@ -16,7 +16,8 @@
   //   align-items: center;
   //   mixin
   @include flexFull();
-  & * {
-    outline: 1px solid;
-  }
+
+  // & * {
+  //   outline: 1px solid;
+  // }
 }
