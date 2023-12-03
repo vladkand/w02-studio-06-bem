@@ -1,0 +1,37 @@
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contaсt__item {
+  & + & {
+    margin-left: 50px;
+  }
+}
+
+.contaсt__link {
+  @include flexFull();
+  //   padding-top: 20px;
+  //   padding-bottom: 20px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: inherit;
+
+  & span {
+    margin-left: 10px;
+  }
+
+  transition: color 1250ms $cubic-function;
+
+  &:focus,
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.contaсt__ico {
+  fill: currentColor;
+}
