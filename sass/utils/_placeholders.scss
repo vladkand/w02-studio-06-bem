@@ -7,6 +7,29 @@
   align-items: center;
 }
 
+%btn {
+  display: inline-block;
+  border-radius: 4px;
+  font-family: inherit;
+
+  text-align: center;
+  font-family: inherit;
+
+  color: #ffffff;
+  background-color: $color-accent;
+  border: 1px solid transparent;
+
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 1250ms $cubic-function;
+  &:hover,
+  &:focus {
+    background-color: $btn-active-color;
+  }
+}
+
 %outline {
   outline: 1px solid teal;
 }

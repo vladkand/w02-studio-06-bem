@@ -2,12 +2,17 @@
 body {
   background-color: $bg-main-color;
   color: $color-main;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {

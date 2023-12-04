@@ -13,11 +13,7 @@
      rgba(47, 48, 58, 0.4)
   ); */
 
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 0, 0, 0.2),
-      rgba(0, 0, 255, 0.1)
-    ),
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2), rgba(0, 0, 255, 0.1)),
     url(../images/hero-bg.jpg);
 
   background-repeat: no-repeat;
@@ -39,4 +35,24 @@
   text-transform: uppercase;
 
   color: $color-hero-title;
+}
+
+.hero__btn {
+  @extend %btn;
+  min-width: 216px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  animation-name: rotator;
+  animation-duration: 1500ms;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* animation-iteration-count: infinite; */
+
+  animation-iteration-count: 2;
+
+  animation-direction: alternate;
 }

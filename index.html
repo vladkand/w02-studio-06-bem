@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    />
-
     <title>w02-studio-6-sass</title>
 
     <!-- FONTS -->
@@ -27,14 +22,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./css/main.min.css" />
 
-    <!-- ANIMATIONS -->
+    <!-- ANIMATE -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
+
   <body>
     <h1>WELCOM</h1>
     <!-- ============== HEADER ======================= -->
@@ -48,21 +45,13 @@
         <nav class="nav main-nav">
           <ul class="nav-list list">
             <li class="nav-list__item item">
-              <a
-                class="nav-list__link nav-link current link"
-                href="./index.html"
-                >Студія</a
-              >
+              <a class="nav-list__link nav-link current link" href="./index.html">Студія</a>
             </li>
             <li class="nav-list__item item">
-              <a class="nav-list__link nav-link link" href="./porfolio.html"
-                >Портфоліо</a
-              >
+              <a class="nav-list__link nav-link link" href="./porfolio.html">Портфоліо</a>
             </li>
             <li class="nav-list__item item">
-              <a class="nav-list__link nav-link link" href="#footer-contact"
-                >Контакти</a
-              >
+              <a class="nav-list__link nav-link link" href="#footer-contact">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -71,10 +60,7 @@
         <!--===== CONTACT =====-->
         <ul class="contact contaсt-list list">
           <li class="contaсt__item item">
-            <a
-              class="contaсt__link contact-link link"
-              href="mailto:info@devstudio.com"
-            >
+            <a class="contaсt__link contact-link link" href="mailto:info@devstudio.com">
               <svg class="contaсt__ico mail link-ico" width="16" height="12">
                 <use href="./images/symbol.svg#mail"></use>
               </svg>
@@ -100,10 +86,53 @@
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
-        <button class="hero-btn btn" data-modal-open type="button">
-          Замовити послугу
-        </button>
+        <button class="hero__btn" data-modal-open type="button">Замовити послугу</button>
       </section>
+
+      <!--== FEATURE- one ==-->
+      <section class="feature section">
+        <div class="container">
+          <h2 class="featute__title title visually-hidden">Особливостi</h2>
+          <ul class="feature__list list">
+            <li class="feature__item">
+              <div class="feature__descr">
+                <h3 class="feature__subtitle title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="feature__text">
+                  Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                </p>
+              </div>
+            </li>
+
+            <li class="feature__item">
+              <div class="feature__descr">
+                <h3 class="feature__subtitle title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="feature__text">
+                  Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                </p>
+              </div>
+            </li>
+
+            <li class="feature__item">
+              <div class="feature__descr">
+                <h3 class="feature__subtitle title">ПЛАНУВАННЯ</h3>
+                <p class="feature__text">
+                  Так само консультація з широким активом значною мірою зумовлює.
+                </p>
+              </div>
+            </li>
+
+            <li class="feature__item">
+              <div class="feature__descr">
+                <h3 class="feature__subtitle title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="feature__text">
+                  Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- feature-fin -->
     </main>
   </body>
 </html>

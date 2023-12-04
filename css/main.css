@@ -35,6 +35,72 @@ button {
   cursor: pointer;
 }
 
+.hero__btn, .btn {
+  display: inline-block;
+  border-radius: 4px;
+  font-family: inherit;
+  text-align: center;
+  font-family: inherit;
+  color: #ffffff;
+  background-color: red;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__btn:hover, .btn:hover, .hero__btn:focus, .btn:focus {
+  background-color: #188ce8;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* rotate */
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+/* ANIMATE-BIBLIOTEK */
+.my-element {
+  /* display: inline-block; */
+  margin: 0 0.5rem;
+  /* referring directly to the animation's @keyframe declaration */
+  /* animation: backOutDown; */
+  -webkit-animation: fadeInRightBig;
+          animation: fadeInRightBig;
+  /* animate__backOutDown */
+  -webkit-animation-duration: 3300ms;
+          animation-duration: 3300ms; /* don't forget to set a duration! */
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
 body {
   background-color: #ffffff;
   color: #757575;
@@ -45,12 +111,28 @@ body {
   letter-spacing: 0.03em;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.title {
+  font-weight: 700;
+  color: #212121;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.17;
 }
 
 .page-header {
@@ -192,4 +274,82 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.hero__btn {
+  min-width: 216px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  -webkit-animation-name: rotator;
+          animation-name: rotator;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* animation-iteration-count: infinite; */
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.feature__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+}
+
+.feature__item {
+  margin-left: 30px;
+  -ms-flex-preferred-size: calc(25% - 30px);
+      flex-basis: calc(25% - 30px);
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+.feature__item:before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation-name: rotator;
+          animation-name: rotator;
+  -webkit-animation-duration: 10050ms;
+          animation-duration: 10050ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.feature__item:nth-child(1)::before {
+  background-image: url(../images/icons/feature01.svg);
+}
+.feature__item:nth-child(2)::before {
+  background-image: url(../images/icons/feature02.svg);
+}
+.feature__item:nth-child(3)::before {
+  background-image: url(../images/icons/feature03.svg);
+}
+.feature__item:nth-child(4)::before {
+  background-image: url(../images/icons/feature04.svg);
+}
+
+.feature__descr {
+  padding-top: 30px;
+}
+
+.feature__subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature__text {
+  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */

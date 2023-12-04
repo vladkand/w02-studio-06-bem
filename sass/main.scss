@@ -1,13 +1,19 @@
-@import "./utils/variables";
-@import "./utils/placeholders";
-@import "./utils/mixin";
-@import "./base/reset";
+@import './utils/variables';
+@import './base/reset';
+@import './utils/placeholders';
+@import './utils/hidden';
 
-@import "./components/common";
+@import './utils/mixin';
+@import './utils/animation';
+
+@import './components/common';
+@import './components/fonts';
+@import './components/button';
 
 // layouts
-@import "./layout/header/header";
-@import "./layout/header/logo";
-@import "./layout/header/nav";
-@import "./layout/header/contact";
-@import "./layout/hero/hero";
+@import './layout/header/header';
+@import './layout/header/logo';
+@import './layout/header/nav';
+@import './layout/header/contact';
+@import './layout/hero/hero';
+@import './layout/feature/feature';
