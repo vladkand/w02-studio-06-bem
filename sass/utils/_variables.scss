@@ -10,13 +10,14 @@ $color-placeholder: rgba(117, 117, 117, 0.5);
 // $color-overlay: rgba(33, 150, 243, 0.9);
 $color-hero-title: #ffffff;
 
-$color-text-btn: #ffffff;
+$color-text-white: #ffffff;
 $color-footer-link: rgba(255, 255, 255, 0.6);
 
 // BG
 $bg-main-color: #ffffff;
 $bg-second-color: #f5f4fa;
 $bg-dark-color: #2f303a;
+$bg-work-title: rgba(47, 48, 58, 0.8);
 //
 $border-header: #ececec;
 $btn-close-border: rgba(0, 0, 0, 0.1);
@@ -28,3 +29,4 @@ $btn-close-ico: #000000;
 
 // TRANSITION
 $cubic-function: cubic-bezier(0.4, 0, 0.2, 1);
+$flexible: cubic-bezier(0.175, 0.885, 0.32, 1.275);

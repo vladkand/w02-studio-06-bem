@@ -1,0 +1,44 @@
+.work__list {
+  margin-top: 50px;
+  @include flexFull($justify: space-between);
+}
+
+.work__item {
+  transform-style: preserve-3d;
+
+  perspective: 1000px;
+}
+
+.work__thumb {
+  position: relative;
+  opacity: 0.3;
+
+  transform: rotateY(45deg);
+
+  @extend %transition;
+
+  //  ========== НАОБОРОТ
+  .work__item:hover & {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+// ===== Позиционирование thumb-title
+.thumb__txt {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  padding: 27px 0 27px;
+
+  color: $color-text-white;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  background-color: $bg-work-title;
+}
