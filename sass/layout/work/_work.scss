@@ -1,6 +1,6 @@
 .work__list {
   margin-top: 50px;
-  @include flexFull($justify: space-between);
+  @include flexFull($just: space-between);
 }
 
 .work__item {

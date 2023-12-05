@@ -1,0 +1,40 @@
+.social {
+  //   display: flex;
+  @include flexFull($just: center);
+  // align-items: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.social__item {
+  &:not:first-child {
+    margin-left: 10px;
+  }
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $soc-link;
+
+  &:focus,
+  &:hover {
+    background-color: $color-accent;
+    color: $color-text-white;
+  }
+
+  // outline: 1px solid;
+}
+
+.social__ico {
+  fill: currentColor;
+}

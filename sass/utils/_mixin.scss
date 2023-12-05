@@ -1,7 +1,7 @@
 // ==== TEMP MIXIN =====
 
-@mixin flexFull($display: flex, $justify: flex-start, $align: center) {
+@mixin flexFull($display: flex, $just: flex-start, $align: center) {
   display: $display;
-  justify-content: $justify;
+  justify-content: $just;
   align-items: $align;
 }
