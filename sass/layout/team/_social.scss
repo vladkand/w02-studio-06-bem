@@ -1,13 +1,19 @@
 .social {
-  //   display: flex;
-  @include flexFull($just: center);
+  @include flexFull($just: space-between);
+
   // align-items: center;
 
   padding-left: 20px;
   padding-right: 20px;
+  row-gap: 10px;
 
   flex-wrap: wrap;
   margin-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  flex-grow: 1;
+  align-items: flex-end;
 }
 
 .social__item {
