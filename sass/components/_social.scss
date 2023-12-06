@@ -1,25 +1,22 @@
 .social {
   @include flexFull($just: space-between);
-
-  // align-items: center;
-
-  padding-left: 20px;
-  padding-right: 20px;
+  column-gap: 10px;
   row-gap: 10px;
-
   flex-wrap: wrap;
-  margin-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
 
-  flex-grow: 1;
-  align-items: flex-end;
+  // flex-grid
+  // margin-left: -10px;
+  // margin-top: -10px;
 }
 
 .social__item {
-  &:not:first-child {
-    margin-left: 10px;
-  }
+  // &:not:first-child {
+  //   margin-left: 10px;
+  // }
+
+  // flex-grid
+  // margin-left: 10px;
+  // margin-top: 10px;
 }
 
 .social__link {
@@ -28,17 +25,15 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
 
   color: $soc-link;
+  border-radius: 50%;
 
   &:focus,
   &:hover {
     background-color: $color-accent;
     color: $color-text-white;
   }
-
-  // outline: 1px solid;
 }
 
 .social__ico {

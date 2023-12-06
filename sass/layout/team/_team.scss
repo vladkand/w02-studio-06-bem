@@ -55,6 +55,11 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.soc-wrap {
-  outline: 1px solid red;
+
+.member__social {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 16px;
+  // flex-grow: 1;
+  // align-items: flex-end;
 }

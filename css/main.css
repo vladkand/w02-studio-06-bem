@@ -149,6 +149,48 @@ body {
   line-height: 1.17;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
+}
+.social__link:focus, .social__link:hover {
+  background-color: red;
+  color: #ffffff;
+}
+
+.social__ico {
+  fill: currentColor;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -460,60 +502,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-.soc-wrap {
-  outline: 1px solid red;
-}
-
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  row-gap: 10px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 16px;
+.member__social {
   padding-left: 32px;
   padding-right: 32px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.social__item:not:first-child {
-  margin-left: 10px;
-}
-
-.social__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: #afb1b8;
-}
-.social__link:focus, .social__link:hover {
-  background-color: red;
-  color: #ffffff;
-}
-
-.social__ico {
-  fill: currentColor;
+  margin-top: 16px;
 }/*# sourceMappingURL=main.css.map */
