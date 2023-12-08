@@ -30,6 +30,11 @@
   color: $soc-link;
   border-radius: 50%;
 
+  // transition: background-color 250ms $cubic-function,
+  //   color 250ms $cubic-function;
+
+  transition: all $trans;
+
   &:focus,
   &:hover {
     background-color: $color-accent;

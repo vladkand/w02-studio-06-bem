@@ -21,7 +21,7 @@
   letter-spacing: 0.02em;
 
   color: $color-second;
-  transition: color 250ms $cubic-function;
+  transition: color $trans;
 
   &:focus,
   &:hover {

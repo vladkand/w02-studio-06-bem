@@ -24,8 +24,8 @@
     margin-left: 10px;
   }
 
-  transition: color 250ms $cubic-function;
-
+  // transition: color $trans;
+  @extend %transition;
   &:focus,
   &:hover {
     color: $color-accent;
