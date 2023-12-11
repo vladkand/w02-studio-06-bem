@@ -547,22 +547,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   -webkit-transition: scale 20ms linear;
   transition: scale 20ms linear;
 }
+.client__link .client__ico {
+  margin: auto;
+}
 .client__link:focus, .client__link:hover {
   color: red;
   border-color: red;
   scale: 1.02;
+}
+.client__link:focus .cliett__ico, .client__link:hover .cliett__ico {
+  margin: auto;
 }
 
 .client__ico {

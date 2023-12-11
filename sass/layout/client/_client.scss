@@ -17,10 +17,15 @@
 
 .client__link {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
+
+  // Position FROM flex=>
+  & .client__ico {
+    margin: auto;
+  }
+  //   justify-content: center;
+  //   align-items: center;
 
   border: 1px solid $client-ico;
 
@@ -33,6 +38,11 @@
     border-color: $color-accent;
     //
     scale: 1.02;
+
+    // Position FROM flex=>
+    & .cliett__ico {
+      margin: auto;
+    }
   }
 }
 
