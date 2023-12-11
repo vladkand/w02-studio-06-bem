@@ -1,0 +1,41 @@
+//
+
+.client__list {
+  display: flex;
+  margin-top: 50px;
+  // flex-grid
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.client__item {
+  flex-basis: calc(100% / 6 - 30px);
+  //   outline: 1px solid;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid $client-ico;
+
+  @extend %transition;
+  transition: scale 20ms linear;
+
+  &:focus,
+  &:hover {
+    color: $color-accent;
+    border-color: $color-accent;
+    //
+    scale: 1.02;
+  }
+}
+
+.client__ico {
+  fill: currentColor;
+}
