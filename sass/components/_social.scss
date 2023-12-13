@@ -37,7 +37,7 @@
   // transition: background-color 250ms $cubic-function,
   //   color 250ms $cubic-function;
 
-  transition: all $trans;
+  @extend %transition;
 
   &:focus,
   &:hover {

@@ -13,8 +13,11 @@
 }
 
 .footer__item {
+  flex-grow: 1;
   & + & {
     margin-left: 93px;
+
+    outline: 1px solid red;
   }
 
   & > * {
