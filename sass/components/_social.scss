@@ -10,6 +10,7 @@
   margin-top: -10px;
 }
 
+// ----> SOCIAL in FOOTER ==>
 .social--dark {
   & .social__link {
     color: $color-text-white;
@@ -46,5 +47,8 @@
 }
 
 .social__ico {
+  // alternative parent->
+  // margin: auto;
+
   fill: currentColor;
 }

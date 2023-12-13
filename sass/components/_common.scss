@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.42;
 }
 
 .section {
@@ -21,4 +21,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  outline: 1px solid tomato;
 }
