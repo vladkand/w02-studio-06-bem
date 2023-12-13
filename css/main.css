@@ -298,17 +298,14 @@ body {
 }
 
 .hero {
-  max-width: 1200px;
+  max-width: 1600px;
   max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  /* background-image: linear-gradient(
-     to right,
-     rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)
-  ); */
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.2)), to(rgba(0, 0, 255, 0.1))), url(../images/hero-bg.jpg);
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2), rgba(0, 0, 255, 0.1)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -549,9 +546,8 @@ body {
   display: flex;
   width: 170px;
   height: 92px;
+  color: #afb1b8;
   border: 1px solid #afb1b8;
-  -webkit-transition: scale 20ms linear;
-  transition: scale 20ms linear;
 }
 .client__link .client__ico {
   margin: auto;
@@ -559,10 +555,8 @@ body {
 .client__link:focus, .client__link:hover {
   color: red;
   border-color: red;
+  background-color: #afb1b8;
   scale: 1.02;
-}
-.client__link:focus .cliett__ico, .client__link:hover .cliett__ico {
-  margin: auto;
 }
 
 .client__ico {

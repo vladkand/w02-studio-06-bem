@@ -1,17 +1,13 @@
 //
 .hero {
-  max-width: 1200px;
+  max-width: 1600px;
   max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
-  /* background-image: linear-gradient(
-     to right,
-     rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)
-  ); */
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2), rgba(0, 0, 255, 0.1)),
     url(../images/hero-bg.jpg);

@@ -24,25 +24,22 @@
   & .client__ico {
     margin: auto;
   }
+  // --->>>> вместо свойств ==>
   //   justify-content: center;
   //   align-items: center;
-
+  color: $client-ico;
   border: 1px solid $client-ico;
 
   @extend %transition;
-  transition: scale 20ms linear;
+  // transition: scale 20ms linear;
 
   &:focus,
   &:hover {
     color: $color-accent;
     border-color: $color-accent;
     //
+    background-color: $client-ico;
     scale: 1.02;
-
-    // Position FROM flex=>
-    & .cliett__ico {
-      margin: auto;
-    }
   }
 }
 
