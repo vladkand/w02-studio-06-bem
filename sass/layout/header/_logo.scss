@@ -7,9 +7,4 @@
   // letter-spacing: 0.03em;
 
   // color: $color-accent;
-
-  @extend %logo;
-  &__part--dark {
-    color: $color-logo-dark;
-  }
 }

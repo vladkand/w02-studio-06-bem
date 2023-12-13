@@ -1,0 +1,11 @@
+//
+.logo {
+  @extend %logo;
+  &__part--dark {
+    color: $color-logo-dark;
+  }
+
+  &__part--light {
+    color: $color-logo-light;
+  }
+}

@@ -1,0 +1,14 @@
+//
+// ======== FOOTER-ADDRESS ========
+.footer__address {
+  //   margin-top: 20px;
+  font-style: inherit;
+}
+.address__item {
+  color: $color-text-white;
+
+  & + & {
+    margin-top: 9px;
+    color: $color-footer-link;
+  }
+}

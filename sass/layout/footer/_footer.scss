@@ -1,0 +1,25 @@
+//
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $bg-dark-color;
+}
+
+.footer__wrapper {
+  display: flex;
+
+  //
+  @include flexFull($align: baseline);
+}
+
+.footer__item {
+  & + & {
+    margin-left: 93px;
+  }
+
+  & > * {
+    margin-top: 20px;
+  }
+}
+
+//  ======= FOOTER-LOGO ===

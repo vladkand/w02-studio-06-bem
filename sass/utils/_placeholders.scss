@@ -8,6 +8,16 @@
   align-items: center;
 }
 
+%logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: $color-accent;
+}
+
 %btn {
   display: inline-block;
   border-radius: 4px;
@@ -29,16 +39,6 @@
   &:focus {
     background-color: $btn-active-color;
   }
-}
-
-%logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-
-  color: $color-accent;
 }
 
 %outline {

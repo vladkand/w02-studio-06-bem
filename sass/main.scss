@@ -1,23 +1,28 @@
-@import "./utils/variables";
-@import "./base/reset";
-@import "./utils/placeholders";
-@import "./utils/hidden";
+@import './utils/variables';
+@import './base/reset';
+@import './utils/placeholders';
+@import './utils/hidden';
 
-@import "./utils/mixin";
-@import "./utils/animation";
+@import './utils/mixin';
+@import './utils/animation';
 
-@import "./components/common";
-@import "./components/fonts";
-@import "./components/button";
-@import "./components/social";
+@import './components/common';
+@import './components/logo';
+@import './components/fonts';
+@import './components/button';
+@import './components/social';
 
 // layouts
-@import "./layout/header/header";
-@import "./layout/header/logo";
-@import "./layout/header/nav";
-@import "./layout/header/contact";
-@import "./layout/hero/hero";
-@import "./layout/feature/feature";
-@import "./layout/work/work";
-@import "./layout/team/team";
-@import "./layout/client/client";
+@import './layout/header/header';
+@import './layout/header/logo';
+@import './layout/header/nav';
+@import './layout/header/contact';
+@import './layout/hero/hero';
+@import './layout/feature/feature';
+@import './layout/work/work';
+@import './layout/team/team';
+@import './layout/client/client';
+@import './layout/footer/footer';
+@import './layout/footer/address';
+@import './layout/footer/footerSocial';
+@import './layout/footer';
